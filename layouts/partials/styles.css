@@ -333,7 +333,7 @@ article.sn > .article-body em {
 }
 
 article.sn > .article-body strong {
-  box-shadow: 0 -.5rem 0 0 #ffc107 inset;
+  box-shadow: 0 1rem 0 0 rgba(255, 255, 0, 0.708) inset;
 }
 
 article.sn > .article-body em {
