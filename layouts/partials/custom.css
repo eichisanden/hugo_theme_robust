@@ -1,0 +1,17 @@
+.amazon-box {
+    border: solid 1px #333;
+    padding: 20px;
+}
+
+.amazon-image {
+    margin-right: 10px;
+    float: left;
+}
+
+.amazon-name {
+    margin-bottom: 10px;
+}
+
+.clear-left {
+    clear: left;
+}
