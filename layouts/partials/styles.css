@@ -19,13 +19,6 @@ body {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5 ,h6 {
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1rem;
-  margin: 0;
-}
-
 hr {
   border: 0;
   border-top: 1px dashed #cfd8dc;
@@ -293,11 +286,13 @@ article.sn > .article-body {
 }
 
 article.sn > .article-body h2 {
-  border-bottom: .25rem solid #333;
-  font-size: 1.2rem;
+  background: #f7f7f7;
+  border-bottom: .25rem solid #dadada;
+  border-left: .25rem solid #333;
+  font-size: 1.3rem;
   line-height: 1.5rem;
   margin: 1.5rem 0;
-  padding: .5rem 0;
+  padding: .8rem .8rem;
 }
 
 article.sn > .article-body h3 {
