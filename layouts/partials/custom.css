@@ -1,6 +1,7 @@
 .amazon-box {
     border: solid 1px #333;
     padding: 20px;
+    margin-bottom: 1rem;
 }
 
 .amazon-image {
