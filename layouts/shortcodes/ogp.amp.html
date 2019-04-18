@@ -1,0 +1,6 @@
+{{ $url := .Get 0 }}
+{{ $jsonData := getJSON "http://localhost:9000/.netlify/functions/ogp?url=" $url }}
+{{ $siteName := $jsonData.siteName }}
+{{ $title := $jsonData.title }}
+
+<a href="{{ $url }}" target="_blank">{{ $siteName }}</a>
