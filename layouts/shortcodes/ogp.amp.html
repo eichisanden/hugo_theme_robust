@@ -1,5 +1,5 @@
 {{ $url := .Get 0 }}
-{{ $jsonData := getJSON "http://localhost:9000/.netlify/functions/ogp?url=" $url }}
+{{ $jsonData := getJSON $.Page.Site.Params.OgpApiEndpoint $url }}
 {{ $siteName := $jsonData.siteName }}
 {{ $title := $jsonData.title }}
 
