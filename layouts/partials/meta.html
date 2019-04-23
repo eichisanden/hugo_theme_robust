@@ -6,9 +6,9 @@
 {{ hugo.Generator }}
 
 <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}images/logo.png">
-{{ with .Site.Home.AlternativeOutputFormats.Get "RSS" }}
-  <link rel="alternate" href="{{ .Permalink }}" type="application/rss+xml" title="{{ $.Site.Title | plainify }}">
-{{ end }}
+{{ range .AlternativeOutputFormats -}}
+<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+{{ end -}}
 
 <link rel="canonical" href="{{ .Permalink }}">
 
