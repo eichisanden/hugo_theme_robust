@@ -1,0 +1,4 @@
+<script src="{{"js/mermaid.min8.0.js" | relURL}}" defer></script>
+<div class="mermaid" align="{{ if .Get "align" }}{{ .Get "align" }}{{ else }}center{{ end }}">
+    {{ safeHTML .Inner }}
+</div>
